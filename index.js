@@ -12,8 +12,8 @@ const client = new Client({
 const characterAI = new CharacterAI();
 
 // Set token and character ID
-const tokenId = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkVqYmxXUlVCWERJX0dDOTJCa2N1YyJ9.eyJpc3MiOiJodHRwczovL2NoYXJhY3Rlci1haS51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDU1MjQ0NDQxNzQwNzA1NTkzMDAiLCJhdWQiOlsiaHR0cHM6Ly9hdXRoMC5jaGFyYWN0ZXIuYWkvIiwiaHR0cHM6Ly9jaGFyYWN0ZXItYWkudXMuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTY4MzIzMTQwNywiZXhwIjoxNjg1ODIzNDA3LCJhenAiOiJkeUQzZ0UyODFNcWdJU0c3RnVJWFloTDJXRWtucVp6diIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.L0nPyXTMHzkHJt015aMY01vxr1SHU7bblGt7N6ykm_nRLgjwWyftzHwadChv8lTUwVaXKySiZTEC97Fqc0R-bhSx5fN7bg2p63mu0qGr0TVCGR-iaV3xcNi4bgDm884h3tX4VAPBzVwjrpwdRBEpi81jg9cRSqqlifJ7WA3oMFtHffoq7dMOrF74YupYB3a-YfDkEZx6cMDtG3KF8Bq7Q1gT8OzAUkHQjXKa49zFqm6SN-fnzBwMRUC0FsDw2Je2SAvUCQFUkLVtOMwz09Rw29o8qc_lywilKaowmPOp-iTo1yCfo2IMxz4-x5lqRo1rO81SHw1ZioxuIID5O8q6SQ"
-const characterId = "CqHI_gJSoxqlw0ysUybAaY_f0vaM0q-o4NrVU80slNM"
+const tokenId = "TOKEN"
+const characterId = "CHARACTERID"
 
 // Listen to 'qr' event to generate and display QR code for authentication
 client.on('qr', qr => {
@@ -95,7 +95,7 @@ client.on('message', async message => {
   chating.sendSeen();
 
   // Check if phone number is from the user
-  if (phoneNumber.number === "6590253245") {
+  if (phoneNumber.number === "6512345678") {
     // If the message is 'ping', respond with 'Pong!', This is use to check if the whatsapp is working
     if (message.body.toLowerCase() === 'ping') {
       // Simulates typing in the chat
